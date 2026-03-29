@@ -6,14 +6,14 @@ public class Announcement {
     private Long id;
     private String title;
     private String content;
-    private AnnouncementType type;
+    /*private AnnouncementType type;*/
     private LocalDateTime createdAt;
 
-    public Announcement(Long id, String title, String content, AnnouncementType type, LocalDateTime createdAt) {
+    public Announcement(Long id, String title, String content, /*AnnouncementType type,*/ LocalDateTime createdAt) {
         this.id = id;
         this.title = title;
         this.content = content;
-        this.type = type;
+        /*this.type = type;*/
         this.createdAt = createdAt;
     }
 
@@ -41,13 +41,13 @@ public class Announcement {
         this.content = content;
     }
 
-    public AnnouncementType getType() {
+    /*public AnnouncementType getType() {
         return type;
     }
 
     public void setType(AnnouncementType type) {
         this.type = type;
-    }
+    }*/
 
     public LocalDateTime getCreatedAt() {
         return createdAt;
