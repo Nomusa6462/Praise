@@ -1,8 +1,9 @@
 package java;
 
+import factory.AnnouncementFactory;
 import org.junit.jupiter.api.Test;
-import za.ac.cput.domain.Announcement;
-import za.ac.cput.domain.AnnouncementType;
+import domain.Announcement;
+import domain.AnnouncementType;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,11 +15,11 @@ class AnnouncementFactoryTest {
                 "Youth Event",
                 "Friday at 6PM",
                 "SITE001",
-                AnnouncementType.EVENT
+                AnnouncementType.EVENTS
         );
 
         assertNotNull(announcement);
-        assertEquals(AnnouncementType.EVENT, announcement.getType());
+        assertEquals(AnnouncementType.EVENTS, announcement.getType());
     }
 
     @Test

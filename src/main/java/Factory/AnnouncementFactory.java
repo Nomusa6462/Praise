@@ -1,7 +1,7 @@
 package factory;
 
-import za.ac.cput.domain.Announcement;
-import za.ac.cput.domain.AnnouncementType;
+import domain.Announcement;
+import domain.AnnouncementType;
 
 import java.time.LocalDate;
 import java.util.UUID;
